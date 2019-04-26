@@ -73,6 +73,7 @@
             this.Controls.Add(this.Quantity);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.AvailableProducts);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddItem";
             this.Text = "AddItem";
             this.Load += new System.EventHandler(this.AddItem_Load);

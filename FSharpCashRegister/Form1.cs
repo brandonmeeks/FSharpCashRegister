@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FSharpCashRegister {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class CashRegisterMain : Form {
+        public CashRegisterMain() {
             InitializeComponent();
         }
     }

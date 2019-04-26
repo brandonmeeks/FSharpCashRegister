@@ -60,6 +60,7 @@
             this.Subtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Subtotal.Location = new System.Drawing.Point(255, 366);
             this.Subtotal.Name = "Subtotal";
+            this.Subtotal.ReadOnly = true;
             this.Subtotal.Size = new System.Drawing.Size(100, 20);
             this.Subtotal.TabIndex = 2;
             // 
@@ -68,6 +69,7 @@
             this.Tax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Tax.Location = new System.Drawing.Point(255, 392);
             this.Tax.Name = "Tax";
+            this.Tax.ReadOnly = true;
             this.Tax.Size = new System.Drawing.Size(100, 20);
             this.Tax.TabIndex = 3;
             // 
@@ -76,6 +78,7 @@
             this.Total.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Total.Location = new System.Drawing.Point(255, 418);
             this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
             this.Total.Size = new System.Drawing.Size(100, 20);
             this.Total.TabIndex = 4;
             // 

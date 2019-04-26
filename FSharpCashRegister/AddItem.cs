@@ -13,5 +13,9 @@ namespace FSharpCashRegister {
         public AddItem() {
             InitializeComponent();
         }
+
+        private void AddItem_Load(object sender, EventArgs e) {
+
+        }
     }
 }

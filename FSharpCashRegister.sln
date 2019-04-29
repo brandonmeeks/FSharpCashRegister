@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSharpCashRegister", "FSharpCashRegister\FSharpCashRegister.csproj", "{2CD625C8-9D94-40DC-8857-B2C2DCE561FE}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Register.FSharp", "Register.FSharp\Register.FSharp.fsproj", "{CA597F6B-6DA7-4438-88F9-12452BEBA377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2CD625C8-9D94-40DC-8857-B2C2DCE561FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CD625C8-9D94-40DC-8857-B2C2DCE561FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CD625C8-9D94-40DC-8857-B2C2DCE561FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA597F6B-6DA7-4438-88F9-12452BEBA377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA597F6B-6DA7-4438-88F9-12452BEBA377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA597F6B-6DA7-4438-88F9-12452BEBA377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA597F6B-6DA7-4438-88F9-12452BEBA377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

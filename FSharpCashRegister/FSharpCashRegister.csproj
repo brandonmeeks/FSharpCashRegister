@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Register.FSharp\Register.FSharp.fsproj">
+      <Project>{ca597f6b-6da7-4438-88f9-12452beba377}</Project>
+      <Name>Register.FSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

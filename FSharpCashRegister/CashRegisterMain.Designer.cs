@@ -181,18 +181,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblCashRegister;
-        private System.Windows.Forms.ListBox ShoppingCart;
-        private System.Windows.Forms.TextBox Subtotal;
-        private System.Windows.Forms.TextBox Tax;
-        private System.Windows.Forms.TextBox Total;
-        private System.Windows.Forms.Label lblSubtotal;
-        private System.Windows.Forms.Label lblTax;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Button btnAddItems;
-        private System.Windows.Forms.Button btnDeleteItem;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnCheckout;
+        public System.Windows.Forms.Label lblCashRegister;
+        public System.Windows.Forms.ListBox ShoppingCart;
+        public System.Windows.Forms.TextBox Subtotal;
+        public System.Windows.Forms.TextBox Tax;
+        public System.Windows.Forms.TextBox Total;
+        public System.Windows.Forms.Label lblSubtotal;
+        public System.Windows.Forms.Label lblTax;
+        public System.Windows.Forms.Label lblTotal;
+        public System.Windows.Forms.Button btnAddItems;
+        public System.Windows.Forms.Button btnDeleteItem;
+        public System.Windows.Forms.Button btnClear;
+        public System.Windows.Forms.Button btnCheckout;
     }
 }
 

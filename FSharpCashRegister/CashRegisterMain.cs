@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrivialBehind;
 
 namespace FSharpCashRegister {
     public partial class CashRegisterMain : Form {
         public CashRegisterMain() {
             InitializeComponent();
-            
+            TrivialBehinds.CreateComponentBehind(this);
         }
     }
 }

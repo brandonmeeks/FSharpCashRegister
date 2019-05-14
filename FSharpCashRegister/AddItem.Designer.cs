@@ -117,12 +117,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.TextBox Quantity;
-        private System.Windows.Forms.Button btnAddToCart;
-        private System.Windows.Forms.TextBox ItemName;
-        private System.Windows.Forms.Label lblItemName;
-        private System.Windows.Forms.TextBox Price;
-        private System.Windows.Forms.Label lblPrice;
+        public System.Windows.Forms.Label lblQuantity;
+        public System.Windows.Forms.TextBox Quantity;
+        public System.Windows.Forms.Button btnAddToCart;
+        public System.Windows.Forms.TextBox ItemName;
+        public System.Windows.Forms.Label lblItemName;
+        public System.Windows.Forms.TextBox Price;
+        public System.Windows.Forms.Label lblPrice;
     }
 }

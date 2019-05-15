@@ -52,12 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddItem.Designer.cs">
-      <DependentUpon>AddItem.cs</DependentUpon>
-    </Compile>
     <Compile Include="Checkout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,9 +65,6 @@
       <DependentUpon>CashRegisterMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddItem.resx">
-      <DependentUpon>AddItem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CashRegisterMain.resx">
       <DependentUpon>CashRegisterMain.cs</DependentUpon>
     </EmbeddedResource>

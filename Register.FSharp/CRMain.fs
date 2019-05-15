@@ -3,6 +3,7 @@ open FSharpCashRegister
 open System.Windows.Forms
 open System.Drawing
 open TrivialBehind
+open System.Runtime.InteropServices
 
 type Product = {
     Name: string
@@ -28,11 +29,18 @@ type CRMainController(ui: CashRegisterMain) =
         ui.Subtotal.Text = model.Subtotal.ToString()
         ui.Tax.Text = model.Tax.ToString()
         ui.Total.Text = model.Total.ToString()
+
+    let AddItem model =
+        let newModel = {ShoppingCart = {Name = ui.ItemName.Text; Price = ui.Price.Text |> decimal; Quantity = ui.Quantity.Text |> int} :: model.ShoppingCart;
+                        Subtotal = 0m;
+                        Tax = 0m;
+                        Total = 0m;}
+        newModel
+        
     
     do ui.btnAddItems.Click.Add(fun _ ->
-        TrivialBehinds.RegisterBehind<AddItem, AddItemController>()
-        let form = new AddItem()
-        form.Show())
+        UpdateForm (AddItem initModel) |> ignore
+        )
 
 
     do ui.btnDeleteItem.Click.Add(fun _ ->

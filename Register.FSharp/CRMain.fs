@@ -52,15 +52,19 @@ type CRMainController(ui: CashRegisterMain) =
     let AddItem model =
         let newItem = 
             { Name = ui.ItemName.Text; Price = ui.Price.Text |> decimal; Quantity = ui.Quantity.Text |> int } 
-        { model with ShoppingCart = newItem :: model.ShoppingCart; }
+        { model with ShoppingCart = newItem :: model.ShoppingCart }
     
     do ui.btnAddItems.Click.Add(fun _ ->
         AddItem model |> CalculateValues |> UpdateForm |> ignore
         )
 
+    let DeleteItem model =
+        let newCart = model.ShoppingCart |> List.filter(fun i -> i.ToString() <> ui.ShoppingCart.SelectedItem.ToString())
+        { model with ShoppingCart = newCart }
+
     do ui.btnDeleteItem.Click.Add(fun _ ->
-        //delete item from model and update view with new model
-        ())
+        DeleteItem model |> CalculateValues |> UpdateForm |> ignore
+        )
      
     do ui.btnClear.Click.Add(fun _ ->
         MainModel.Default |> UpdateForm

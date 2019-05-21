@@ -46,8 +46,8 @@ type CRMainController(ui: CashRegisterMain) =
 
     let AddItem model =
         let newItem = 
-            { Name = ui.ItemName.Text; Price = ui.Price.Text |> decimal; Quantity = ui.Quantity.Text |> int } 
-        { model with ShoppingCart = newItem :: model.ShoppingCart }
+            [ { Name = ui.ItemName.Text; Price = ui.Price.Text |> decimal; Quantity = ui.Quantity.Text |> int } ]
+        { model with ShoppingCart = model.ShoppingCart @ newItem }
 
     let DeleteItem model =
         let newCart = model.ShoppingCart |> List.filter(fun i -> i.ToString() <> ui.ShoppingCart.SelectedItem.ToString())

@@ -42,6 +42,7 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="CheckoutMVC.fs" />
     <Compile Include="CRMain.fs" />
     <None Include="Script.fsx" />
     <Content Include="packages.config" />

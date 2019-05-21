@@ -25,12 +25,7 @@ with
     }
 
 type CRMainController(ui: CashRegisterMain) =
-    let mutable model = {
-        ShoppingCart = []
-        Subtotal = 0m
-        Tax = 0m
-        Total = 0m
-        }
+    let mutable model = MainModel.Default
     
     let UpdateForm newModel =
         ui.ShoppingCart.Items.Clear()
@@ -53,14 +48,14 @@ type CRMainController(ui: CashRegisterMain) =
         let newItem = 
             { Name = ui.ItemName.Text; Price = ui.Price.Text |> decimal; Quantity = ui.Quantity.Text |> int } 
         { model with ShoppingCart = newItem :: model.ShoppingCart }
-    
-    do ui.btnAddItems.Click.Add(fun _ ->
-        AddItem model |> CalculateValues |> UpdateForm |> ignore
-        )
 
     let DeleteItem model =
         let newCart = model.ShoppingCart |> List.filter(fun i -> i.ToString() <> ui.ShoppingCart.SelectedItem.ToString())
         { model with ShoppingCart = newCart }
+    
+    do ui.btnAddItems.Click.Add(fun _ ->
+        AddItem model |> CalculateValues |> UpdateForm |> ignore
+        )
 
     do ui.btnDeleteItem.Click.Add(fun _ ->
         DeleteItem model |> CalculateValues |> UpdateForm |> ignore
@@ -71,5 +66,7 @@ type CRMainController(ui: CashRegisterMain) =
     )
     
     do ui.btnCheckout.Click.Add(fun _ ->
-    //open Checkout form
-    ())
+        TrivialBehinds.RegisterBehind<CheckoutForm, CheckoutController>()
+        let form = new CheckoutForm(model.Subtotal, model.Total, model.Total)
+        form.Show()
+    )

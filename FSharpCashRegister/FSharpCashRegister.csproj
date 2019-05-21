@@ -52,11 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Checkout.cs">
+    <Compile Include="CheckoutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Checkout.Designer.cs">
-      <DependentUpon>Checkout.cs</DependentUpon>
+    <Compile Include="CheckoutForm.Designer.cs">
+      <DependentUpon>CheckoutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CashRegisterMain.cs">
       <SubType>Form</SubType>
@@ -67,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CashRegisterMain.resx">
       <DependentUpon>CashRegisterMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutForm.resx">
+      <DependentUpon>CheckoutForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
